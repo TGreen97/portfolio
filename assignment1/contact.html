@@ -2,69 +2,70 @@
 <html>
 	<head>
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, intial-scale-1">
 
-		<title>Killer Portfolio</title>
+		<title>Contact | Todd Green</title>
 
 		<!-- Stylesheet Placeholder -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 
 	<body>
-		<nav>
-			<div id="logo">
-				<h1>Todd Green</h1>				
-			</div>
+		<header id="masthead">
+			<div class="container">
+				<a href="index.html" id="logo">Todd Green</a>
 			
-			<div>
-				<ul id="sitenav">
-					<li><a href="index.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
+				<nav>
+					<a href="index.html">About</a>
+					<a href="portfolio.html">Portfolio</a>
+					<a href="contact.html">Contact</a>
+				</nav>
 			</div>
-		</nav>
+		</header>
 
-		<section class="contact">
+		<div id="main-container" class="container">
+			<section class="main-section">
 
 				<!-- Section contact form -->
-				<h2>Contact</h2>
+				<h1>Contact</h1>
 				
-				<form action="#" method="post">
-					<fieldset>
-						<label for="name">Name</label> <br>
-						<input type="text" id="name" placeholder="John Smith" /><br>
+				<form id="contact-form">
+						<ul>
+							<li>
+								<label for="name">Name</label>
+								<input type="text" id="name" name="name" placeholder="John Smith" required="required"></input>
+							</li>
 
-						<label for="email">Email</label> <br>
-						<input type="text" id="email" placeholder="example@gmail.com" /> <br>
+							<li>
+								<label for="email">Email</label>
+								<input type="email" id="email" name="email" placeholder="example@gmail.com" required="required"></input>
+							</li>
 
-						<label for="message">Message</label> <br>
-						<input type="text" id="message" /> <br>
-
-						<input type="submit" id="submit" value="Submit" />
-
-					</fieldset>
+							<li>
+								<label for="message">Message</label>
+								<textarea id="message" name="message" required="required" placeholder="Leave a message at the beep"></textarea>
+							</li>
+						</ul>
+						<input type="submit">
 				</form>
 		</section>
 
-		<aside class="connect">
+		<section class="sidebar">
+				<div id="connect">
+					<h2>Connect with Me</h2>
 
-			<!-- Section connect -->
-			<div id="connect">
-				
-				<h2>Connect With Me</h2>
+					<a class="social" href="https://github.com/TGreen97"><img src="assets/images/logo_github.png" alt="Github" width="50" height="50"></a>
+						
+					<a class="social" href="https://www.linkedin.com/in/toddgreen1"><img src="assets/images/logo_linked.png" alt="LinkedIn" width="50" height="50"></a>	
 
-				<ul id="social">
-					<li><a id="github" href="https://github.com/TGreen97"><img src="assets/images/logo_github.png" width="50" height="50" alt="git"></a></li>
-					
-					<li><a id="linked" href="https://www.linkedin.com/in/toddgreen1"><img src="assets/images/logo_linked.png" width="50" height="50" alt="link"></a></li>				
-					<li><a id="stack" href="https://stackoverflow.com"><img src="assets/images/logo_stack.png" width="50" height="50" alt="stack-o"></a></li>
-				</ul>
-			</div>	
-		</aside>
+					<a class="social" href="https://stackoverflow.com"><img src="assets/images/logo_stack.png" alt="Stack Overflow" width="50" height="50"></a>
+				</div>
+		</section>
 
 		<footer>
-			<p id="copyright">&copy; Todd Green 2016</p>
-			<p id="back-top"><a href="#">Top</a></p>
+			<div class="container">
+				&copy;2016 Todd Green	
+			</div>
 		</footer>
 	</body>
 </html>
