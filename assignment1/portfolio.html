@@ -2,82 +2,88 @@
 <html>
 	<head>
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale-1">
 
-		<title>Killer Portfolio</title>
-		
+		<title>Portfolio | Todd Green</title>
+
 		<!-- Stylesheet Placeholder -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 
-	<body>
-		<nav>
-			<div id="logo">
-				<h1>Todd Green</h1>				
-			</div>
-			
-			<div>
-				<ul id="sitenav">
-					<li><a href="index.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
 
-		<section class="portfolio">
+	<body>
+		<header id="masthead">
+			<div class="container">
+				<a href="index.html" id="logo">Todd Green</a>
+			
+				<nav>
+					<a href="index.html">About</a>
+					<a href="portfolio.html">Portfolio</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+			</div>
+		</header>
+
+		<div id="main-container" class="container">
+			<section class="main-section">
 
 				<!-- Section Portfolio -->
-				<h2>Portfolio</h2>
+				<h1>Portfolio</h1>
 
-				<div id="samples">
+				<div class="work">
 					
-					<div class="hangman">
-						<a><img src="assets/images/plc_Hangman-3.png" alt="View more" width="230" height="160" /></a>
-						<h3><span>Hangman</span></h3>
+					<img src="assets/images/plc_Hangman-3.png" alt="Hangman" width="230" height="160" >
+					
+					<h3>Hangman</h3>
 
-					</div>
-
-					<div class="rpg">
-						<a href="#"><img src="assets/images/plc_RPG.jpg" alt="View more" width="230" height="160" /></a>
-						<h3><span>RPG</span></h3>
-					</div>
-
-					<div class="trivia">
-						<a href="#"><img src="assets/images/plc_trivial.jpg" alt="View more" width="240" height="160" /></a>
-						<h3><span>Trivia Game</span></h3>
-					</div>
-
-					<div class="rutgers">
-						<a href="#"><img src="assets/images/plc_Rutgers.png" alt="View more" width="240" height="160" /></a>
-						<h3><span>Rutgers Info Widget</span></h3>
-					</div>
-
-					<div class="rock">
-						<a href="#"><img src="assets/images/plc_rock.png" alt="View More" width="240" height="160" /></a>
-						<h3><span>Rock Paper Scissors</span></h3>
-					</div>
 				</div>
-		</section>
 
-		<aside class="connect">
+				<div class="work">
 
-			<!-- Section connect -->
-			<div id="connect">
-
-				<h2>Connect With Me</h2>
-
-				<ul id="social">
-					<li><a id="github" href="https://github.com/TGreen97"><img src="assets/images/logo_github.png" width="50" height="50" alt="git"></a></li>
+					<img src="assets/images/plc_RPG.jpg" alt="RPG" width="230" height="160" >
 					
-					<li><a id="linked" href="https://www.linkedin.com/in/toddgreen1"><img src="assets/images/logo_linked.png" width="50" height="50" alt="link"></a></li>				
-					<li><a id="stack" href="https://stackoverflow.com"><img src="assets/images/logo_stack.png" width="50" height="50" alt="stack-o"></a></li>				
-				</ul>
-			</div>	
-		</aside>
+					<h3>RPG</h3>
+				</div>
+
+				<div class="work">
+					
+					<img src="assets/images/plc_trivial.jpg" alt="Trivia Game" width="240" height="160" >
+					
+					<h3>Trivia Game</h3>
+				</div>
+
+				<div class="work">
+					
+					<img src="assets/images/plc_Rutgers.png" alt="Rutgers Info" width="240" height="160" >
+					
+					<h3>Rutgers Info Widget</h3>
+				</div>
+
+				<div class="work">
+					
+					<img src="assets/images/plc_rock.png" alt="Rock Paper" width="240" height="160" >
+					
+					<h3>Rock Paper Scissors</h3>
+				</div>
+				
+			</section>
+
+			<section class="sidebar">
+				<div id="connect">
+					<h2>Connect with Me</h2>
+
+					<a class="social" href="https://github.com/TGreen97"><img src="assets/images/logo_github.png" alt="Github" width="50" height="50"></a>
+						
+					<a class="social" href="https://www.linkedin.com/in/toddgreen1"><img src="assets/images/logo_linked.png" alt="LinkedIn" width="50" height="50"></a>	
+
+					<a class="social" href="https://stackoverflow.com"><img src="assets/images/logo_stack.png" alt="Stack Overflow" width="50" height="50"></a>
+				</div>
+			</section>
 
 		<footer>
-			<p id="copyright">&copy; Todd Green 2016</p>
-			<p id="back-top"><a href="#">Top</a></p>
+			<div class="container">
+				&copy; 2016 Todd Green
+			</div>
 		</footer>
 	</body>
 </html>
